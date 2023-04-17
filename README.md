@@ -16,18 +16,18 @@ de un proyecto en Laravel sin necesidad de hacer pesados envios al servidor.
 
 ## Herramientas utilizadas
 
-- [Laravel](https://laravel.com/).
-- [Livewire](https://laravel-livewire.com/).
-- [Tailwind](https://tailwindcss.com/).
-- [Alpine](https://alpinejs.dev/).
+- [Laravel](https://laravel.com/)
+- [Livewire](https://laravel-livewire.com/)
+- [Tailwind](https://tailwindcss.com/)
+- [Alpine](https://alpinejs.dev/)
 
 ## Agradecimientos
 
-- [CodersFree](https://codersfree.com/).
+- [CodersFree](https://codersfree.com/)
 
 
 ## Licencia
 
-- [MIT license](https://opensource.org/licenses/MIT).
+- [MIT license](https://opensource.org/licenses/MIT)
 
 
