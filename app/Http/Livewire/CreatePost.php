@@ -59,4 +59,11 @@ class CreatePost extends Component
     {
         $this->validateOnly($propertyName);
     }
+
+    public function updatingisOpened(){
+        if ($this->isOpened == false) {
+            $this->cleanImageInput = rand();
+            $this->reset(['title','content','image']);
+        }
+    }
 }

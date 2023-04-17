@@ -16,7 +16,6 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <!-- Styles -->
     @livewireStyles
 </head>
@@ -54,6 +53,28 @@
                 message.message,
                 message.status ?? 'success'
             )
+        })
+
+        Livewire.on('deletePostConfirm', (postId) => {
+
+            Swal.fire({
+                    title: 'Eliminar post',
+                    text: "¿Está seguro de eliminar el post?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Livewire.emitTo('show-posts', 'deletePost', postId);
+                        Swal.fire(
+                            'Deleted!',
+                            'Su post ha sido eliminado',
+                            'success'
+                        )
+                    }
+                })
         })
     </script>
 
