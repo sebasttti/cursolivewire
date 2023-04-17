@@ -60,6 +60,10 @@ class CreatePost extends Component
         $this->validateOnly($propertyName);
     }
 
+    /**
+     * Este metodo permite limpiar los campos del modal cuando se cierra de imprevisto
+     */
+
     public function updatingisOpened(){
         if ($this->isOpened == false) {
             $this->cleanImageInput = rand();
